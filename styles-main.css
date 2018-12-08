@@ -1,0 +1,199 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #f1f1f1;
+  font-family: Arial;
+  margin: 0;
+}
+
+/* Header/Blog Title */
+.header {
+  background: white;
+  background-image: url("muretasantos.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: black;
+  font-family: 'Merriweather', sans-serif;
+  height: 300px;
+  padding: 20px;
+  position: relative;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+.ul-nav {
+  background-color: #333;
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+}
+
+.li-nav {
+  float: left;
+}
+
+.li-nav .active {
+  background-color: maroon;
+  color: white;
+}
+
+.li-nav a, .dropbtn {
+  color: white;
+  display: inline-block;
+  padding: 14px 16px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.li-nav a:hover, .dropdown:hover .dropbtn {
+  background-color: #555;
+}
+
+.li-nav.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  background-color: #f9f9f9;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  display: none;
+  min-width: 160px;
+  position: absolute;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  display: block;
+  padding: 12px 16px;
+  text-align: left;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  background-color: #f1f1f1;
+  float: left;
+  padding-left: 20px;
+  text-align: justify;
+  width: 25%;
+}
+
+.helpwanted-img {
+  background-color: #aaa;
+  background-image: url(helpwanted.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 20px;
+  width: 100%;
+}
+
+.book-img {
+  background-color: #aaa;
+  background-image: url(books.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 100px;
+  padding: 20px;
+  width: 100%;
+}
+
+.sorry-img {
+  background-color: #aaa;
+  background-image: url(sorry.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 20px;
+  width: 100%;
+}
+
+
+#outer_wrapper {
+    overflow: scroll;
+    width:100%;
+}
+#outer_wrapper #inner_wrapper {
+    width:6000px; /* If you have more elements, increase the width accordingly */
+}
+#outer_wrapper #inner_wrapper div.box { /* Define the properties of inner block */
+    width: 250px;
+    height:300px;
+    float: left;
+    margin: 0 4px 0 0;
+    border:1px grey solid;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+/* Footer */
+.footer {
+  background: #ddd;
+  margin-top: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-link {
+  color: black;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: gray;
+}
+
+.end-logo {
+  font-size: 1rem;
+  padding: 10px 0;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    padding: 0;
+    width: 100%;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
